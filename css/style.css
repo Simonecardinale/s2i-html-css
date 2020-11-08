@@ -7,7 +7,7 @@
 .container-presentazione {
   width: 500px;
   height: 500px;
-  background-image: url('img/profile.jpeg');
+  background-image: url('s2i-html-css/profile.jpeg');
   background-size: cover;
   border: 3px solid red;
 
