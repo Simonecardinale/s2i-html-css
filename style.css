@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 65px;
+  background-color: rgb(39, 40, 69);
+}
+
+/* menu */
+ul {
+  background-color: rgba(26, 30, 80, 0.65);
+  text-align: right;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+ li {
+   display: inline-block;
+   padding: 20px;
+ }
+
+.menu-item {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+/* /menu */
+
+/* sfondo home  */
+.container-presentazione {
+  width: 100%;
+  height: 100vh;
+  background-image: url('foto-sfondo.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.layover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.44);
+  position: relative;
+}
+ #intestazione, #sottotitolo, #description {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 72px;
+  text-align: center;
+  padding: 20px;
+ }
+
+ #sottotitolo {
+   top: 50%;
+   font-size: 52px;
+   color: rgb(113, 143, 187);
+   border: 3px solid rgb(113, 143, 187);
+   border-radius: 30px;
+ }
+
+ #description {
+   top: 80%;
+   font-size: 30px;
+   color: rgb(201, 184, 123);
+   width: 80%;
+ }
+
+.bio {
+  width: 100%;
+  position: relative;
+
+}
+
+.foto-bio {
+  width: 500px;
+  height: 600px;
+  margin-top: 100px;
+  border: 2px solid black;
+  background-image: url('foto-sfondo.jpeg');
+  background-size: cover;
+  float: left;
+}
+
+.foto-title-container {
+  background-color: white;
+  position: absolute;
+  border: 2px solid black;
+  padding: 10px 20px;
+  top: 120px;
+  left: 32%;
+}
+
+.foto-title {
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.bio-presentation-container {
+  border: 2px solid black;
+  width: 50%;
+  float: right;
+  margin-top: 200px;
+  margin-right: 100px;
+  background-color: rgb(190, 185, 123);
+}
+
+.bio-presentation {
+  font-family: 'Poppins', sans-serif;
+  margin: 10px;
+  color: black;
+}
+
+.clearfix {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* /sfondo home */
