@@ -1,0 +1,123 @@
+/* stili generali */
+
+[class*="col-"]{
+    /* border: 1px solid black; */
+    height: 100vh;
+    position: relative;
+}
+
+[class*="col-"]>*{
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    /* border: 2px solid red; */
+}
+
+[class*="col-"] i {
+    font-size: 40vh;
+    text-shadow: 5px 5px grey;
+}
+
+.position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+[class*="col-xs-12"] h2 {
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+/* stili generali */
+
+/* header */
+
+#ms_fixed_image {
+    text-align: center;
+    background-image: url('../img/header-img.png');
+}
+
+.foto-profilo {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+#ms_fixed_image h1, #ms_fixed_image h2 {
+    font-weight: bold;
+    color: white;
+}
+
+#ms_fixed_image h3 {
+    margin-top: 70px;
+}
+
+#ms_fixed_image .position i {
+    display: inline-block;
+    font-size: 25px;
+    text-shadow: none;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+#ms_fixed_image .position i:hover {
+    color: grey;
+}
+
+/* /header */
+
+/* 1sezione */
+
+.about_container {
+    background-color: hsl(197, 42%, 56%);
+}
+
+
+/* /1sezione */
+
+/* section 2 */
+
+.skills_container {
+    background-color: green;
+}
+
+
+
+/* /section 2 */
+
+
+/* section 3 */
+
+.experience_container {
+    background-color: orange;
+}
+
+/* /section 3 */
+
+/* section 4 */
+
+.contact_container {
+    background-color: brown;
+}
+
+/* /section 4 */
+
+
+@media screen and (min-width:992px){
+    #ms_fixed_image {
+        height: 100vh;
+        position: fixed;
+        background-color: red;
+        z-index: 9999;
+    }
+
+    
+}
