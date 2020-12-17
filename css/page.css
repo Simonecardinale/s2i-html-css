@@ -1,0 +1,254 @@
+[class*="col-"] i {
+    font-size: 10vh;
+    text-shadow: 5px 5px grey;
+    color: white;
+    padding: 20px 0;
+}
+.subtitle {
+    font-size: 26px;
+    display: inline-block;
+    color: white;
+}
+
+.i_item {
+    text-align: left;
+}
+
+
+.i_item  p {
+    height: auto;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 70px;
+    margin-top: 25px;
+}
+
+.white {
+    color: white;
+}
+
+.red {
+    color: #3d1212;
+}
+
+.about_container .row {
+    padding: 0 70px;
+}
+.dark {
+    color: #001e1d;
+}
+
+/* descrizione di apertura */
+
+
+/* /descrizione di apertura */
+/* corpo principale "skills" */
+
+    .skill_bar {
+        height: 3px;
+        width: 50%;
+        background-color: white;
+        margin: auto;
+    }
+
+    .skill_bar_progress {
+        height: 100%;
+        width: 80%;
+        background-color:#e16162;
+        animation: progress 3s linear;
+    }
+
+    .skill_container>* {
+        margin: 20px auto;
+    }
+
+    .skills_container i {
+        color: #001e1d;
+    }
+
+    .skill_container i, #arrow_down i{
+        text-shadow: none;
+    }
+
+
+    /* animazioni */
+
+    @keyframes progress {
+        0% {width: 0%;}
+        100%{width: 80%;}
+    }
+
+    @keyframes experience {
+        0% {opacity: 0;}
+        100% {opacity: 100%;;}
+    }
+
+    /* /animazioni */
+
+
+/* /corpo principale "skills" */
+/* corpo principale esperienze */
+
+#experience_instruction {
+    margin-top: 50px;
+}
+
+.timeline {
+    height: 500px;
+    width: 5px;
+    background-color: white;
+    margin: 200px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.timeball {
+    height: 20px;
+    width: 20px;
+    background-color: #f9bc60;
+    border-radius: 50%;
+    position: relative;
+}
+
+.left_description, .right_description {
+    width: 300px;
+    background-color: #abd1c6;
+    position: absolute;
+    right: 130%;
+    bottom: 100%;
+    border-radius: 20px;
+    display: none;
+}
+
+
+.right_description {
+    left: 130%;
+}
+
+.left_description::after {
+    content: " ";
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid #abd1c6 ;
+    border-left: 20px solid transparent;
+    position: absolute;
+    top: 95%;
+    left: 90%;
+}
+
+.right_description::before {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-top: 20px solid #abd1c6;
+    border-right: 20px solid transparent;
+    position: absolute;
+    top: 95%;
+    right: 90%;
+}
+
+.timeball h3 {
+    font-weight: bold;
+}
+
+.timeball hr {
+    margin: auto 20px;
+    border-color: black;
+}
+
+.timeball p {
+    border: none;
+    font-size: 12px;
+    padding: 0;
+    margin: 10px 10px;
+}
+
+/* hover */
+
+.laurea_ball:hover .laurea, .tim_ball:hover .tim, .crew_ball:hover .crew, .dm_ball:hover .dm, .manager_ball:hover .manager, .web_ball:hover .web  {
+    display: block;
+    animation: experience 2s ;
+}
+
+/* /hover */
+
+/* /corpo principale esperienze */
+
+
+/* contatti */
+
+.contact_container i {
+    color: #001e1d;
+}
+
+.contact_text_container {
+    height: 300px;
+    width: 500px;
+    background-color: #001e1d;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+}
+
+.contact_p_container  {
+    padding: 20px 0;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+
+}
+
+
+/* /contatti */
+
+
+
+
+
+@media screen and (max-width:991px) {
+
+    .subtitle {
+        display: block;
+    }
+
+    .i_item, .i_item > i {
+        text-align: center;
+    }
+
+    [class*="col-"]:not(#ms_fixed_image){
+        /* border: 1px solid black; */
+        height: auto;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .timeball {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .left_description, .right_description {
+        position: static;
+        margin-bottom: 50px;
+    }
+
+    .left_description::after, .right_description::before {
+        content: " ";
+        width: 0px;
+        height: 0px;
+        border-top: 20px solid #abd1c6 ;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        position: absolute;
+        top: -100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

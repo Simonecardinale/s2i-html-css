@@ -11,6 +11,10 @@
     font-weight: bold;
 }
 
+.no_height{
+    height: auto;
+}
+
 .container {
     /* border: 2px solid red; */
 }
@@ -30,7 +34,16 @@
 
 [class*="col-xs-12"] h2 {
     font-weight: bold;
-    margin-top: 50px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.vh_height {
+    height: 100vh;
 }
 
 /* stili generali */
@@ -47,16 +60,11 @@
     width: 200px;
     border-radius: 50%;
     border: 1px solid white;
-    margin-top: 20px;
 }
 
 #ms_fixed_image h1, #ms_fixed_image h2 {
     font-weight: bold;
     color: white;
-}
-
-#ms_fixed_image h3 {
-    margin-top: 70px;
 }
 
 #ms_fixed_image .position i {
@@ -77,18 +85,20 @@
 /* 1sezione */
 
 .about_container {
-    background-color: hsl(197, 42%, 56%);
+    background-color: #004643;
 }
-
 
 /* /1sezione */
 
 /* section 2 */
 
 .skills_container {
-    background-color: green;
+    background-color: #abd1c6;
 }
 
+.skills_container >* {
+    color: #001e1d;
+}
 
 
 /* /section 2 */
@@ -97,7 +107,7 @@
 /* section 3 */
 
 .experience_container {
-    background-color: orange;
+    background-color: #004643;
 }
 
 /* /section 3 */
@@ -105,10 +115,37 @@
 /* section 4 */
 
 .contact_container {
-    background-color: brown;
+    background-color: #abd1c6;
+}
+
+.contact_container > * {
+    color: #001e1d;
 }
 
 /* /section 4 */
+
+
+/* hover */
+
+.about_hover:hover, .skills_hover:hover, .experience_hover:hover,.contact_hover:hover {
+    opacity: 50%;
+}
+
+/* .skills_hover:hover {
+    opacity: 50%;
+    
+}
+
+.experience_hover:hover {
+    background-color: rgba(255, 166, 0, 0.5);
+}
+
+.contact_hover:hover {
+    background-color: rgba(165, 42, 42, 0.50);
+} */
+
+
+/* /hover */
 
 
 @media screen and (min-width:992px){
